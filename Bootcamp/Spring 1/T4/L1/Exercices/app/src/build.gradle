@@ -1,0 +1,32 @@
+plugins {
+    id 'maven-publish'
+    id 'java'
+}
+
+processResources {
+    inputs.property "version", project.version
+    filteringCharset "UTF-8"
+}
+
+compileJava.options.encoding = 'UTF-8'
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+def targetJavaVersion = 17
+tasks.withType(JavaCompile).configureEach {
+      if (targetJavaVersion >= 10 || JavaVersion.current().isJava10Compatible())
+        it.options.release = targetJavaVersion
+}
+
+test {
+    useJUnitPlatform()
+}
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+repositories {
+    mavenCentral()
+}

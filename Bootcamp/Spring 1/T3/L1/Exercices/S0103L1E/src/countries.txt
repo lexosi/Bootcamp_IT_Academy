@@ -1,0 +1,75 @@
+España: Madrid
+Francia: París
+Italia: Roma
+Alemania: Berlín
+Reino Unido: Londres
+Portugal: Lisboa
+Holanda: Ámsterdam
+Bélgica: Bruselas
+Suiza: Berna
+Austria: Viena
+Grecia: Atenas
+Suecia: Estocolmo
+Noruega: Oslo
+Dinamarca: Copenhague
+Finlandia: Helsinki
+Rusia: Moscú
+Estados Unidos: Washington D.C.
+Canadá: Ottawa
+México: Ciudad de México
+Argentina: Buenos Aires
+Brasil: Brasilia
+Colombia: Bogotá
+Chile: Santiago
+Perú: Lima
+Ecuador: Quito
+Venezuela: Caracas
+Bolivia: La Paz
+Paraguay: Asunción
+Uruguay: Montevideo
+Costa Rica: San José
+El Salvador: San Salvador
+Honduras: Tegucigalpa
+Guatemala: Ciudad de Guatemala
+Nicaragua: Managua
+Panamá: Ciudad de Panamá
+Cuba: La Habana
+República Dominicana: Santo Domingo
+Haití: Puerto Príncipe
+Jamaica: Kingston
+Bahamas: Nassau
+Trinidad y Tobago: Puerto España
+Barbados: Bridgetown
+Canadá: Ottawa
+Belice: Belmopán
+Guatemala: Ciudad de Guatemala
+El Salvador: San Salvador
+Honduras: Tegucigalpa
+Nicaragua: Managua
+Costa Rica: San José
+Panamá: Ciudad de Panamá
+Argentina: Buenos Aires
+Paraguay: Asunción
+Uruguay: Montevideo
+Bolivia: La Paz
+Chile: Santiago
+Perú: Lima
+Ecuador: Quito
+Colombia: Bogotá
+Venezuela: Caracas
+Guyana: Georgetown
+Surinam: Paramaribo
+Guayana Francesa: Cayena
+Colombia: Bogotá
+Venezuela: Caracas
+Guyana: Georgetown
+Surinam: Paramaribo
+Brasil: Brasilia
+Paraguay: Asunción
+Uruguay: Montevideo
+Bolivia: La Paz
+Perú: Lima
+Ecuador: Quito
+Colombia: Bogotá
+Venezuela: Caracas
+Guyana: Georgetown
