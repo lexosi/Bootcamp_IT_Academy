@@ -1,4 +1,4 @@
-# Brief explanation of the topics covered in this Spring
+# Brief explanation of the topics covered in this Sprint
 
 java language
 
