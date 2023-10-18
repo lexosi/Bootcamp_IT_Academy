@@ -1,6 +1,6 @@
 # Instructions
 
-## Exercice 1
+## Exercise 1
 
 An optical shop, named "Cul de Ampolla," wants to computerize the management of customers and eyeglass sales.
 
@@ -26,7 +26,7 @@ An optical shop, named "Cul de Ampolla," wants to computerize the management of 
   - When a new customer arrives, they store the information about the customer who recommended the shop (provided someone recommended them).
 - Our system should indicate which employee has sold each pair of glasses.
 
-## Exercice 2
+## Exercise 2
 
 - You have been hired to design a website that allows for online food delivery orders.
 - Consider the following instructions to model the database for the project:
