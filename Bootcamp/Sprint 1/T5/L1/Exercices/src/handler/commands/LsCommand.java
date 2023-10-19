@@ -21,17 +21,17 @@ public class LsCommand implements Command {
     /* En java, un File es considerado como archivo y directorio. */
     final File PATH = new File(DIRECTORY);
 
+    if (!PATH.exists()) {
+      System.out.println("Has introducido un directorio que no existe.");
+      return false;
+    }
+
+    if (!PATH.isDirectory()) {
+      System.out.println("El directorio introducido refiere a un archivo.");
+      return false;
+    }
+
     try {
-      if (!PATH.exists()) {
-        System.out.println("Has introducido un directorio que no existe.");
-        return false;
-      }
-
-      if (!PATH.isDirectory()) {
-        System.out.println("El directorio introducido refiere a un archivo.");
-        return false;
-      }
-
       final String RESULT = FileUtils.listFiles(PATH);
 
       if (args.length > 1 && args[1].equals("-f")) {
