@@ -1,0 +1,87 @@
+// Colección Usuarios
+{
+    "_id": ObjectId,
+    "email": String,
+    "password": String,
+    "nombre_usuario": String,
+    "fecha_nacimiento": Date,
+    "sexo": String,
+    "pais": String,
+    "codigo_postal": String
+}
+
+// Colección Videos
+{
+    "_id": ObjectId,
+    "titulo": String,
+    "descripcion": String,
+    "tamaño": Number,
+    "nombre_archivo": String,
+    "duracion": Number,
+    "thumbnail": String,
+    "numero_reproducciones": Number,
+    "numero_likes": Number,
+    "numero_dislikes": Number,
+    "estado": String, // "publico", "oculto", "privado"
+    "etiquetas": [ObjectId], // Referencia a la colección Etiquetas
+    "usuario": ObjectId, // Referencia a la colección Usuarios
+    "fecha_hora_publicacion": Date
+}
+
+// Colección Etiquetas
+{
+    "_id": ObjectId,
+    "nombre": String
+}
+
+// Colección Canales
+{
+    "_id": ObjectId,
+    "nombre": String,
+    "descripcion": String,
+    "fecha_creacion": Date,
+    "usuario": ObjectId // Referencia a la colección Usuarios
+}
+
+// Colección Suscripciones
+{
+    "_id": ObjectId,
+    "usuario": ObjectId, // Referencia a la colección Usuarios
+    "canal": ObjectId // Referencia a la colección Canales
+}
+
+// Colección LikesDislikes
+{
+    "_id": ObjectId,
+    "usuario": ObjectId, // Referencia a la colección Usuarios
+    "video": ObjectId, // Referencia a la colección Videos
+    "tipo": String, // "like" o "dislike"
+    "fecha_hora": Date
+}
+
+// Colección Playlists
+{
+    "_id": ObjectId,
+    "nombre": String,
+    "fecha_creacion": Date,
+    "estado": String, // "publica" o "privada"
+    "videos": [ObjectId] // Referencia a la colección Videos
+}
+
+// Colección Comentarios
+{
+    "_id": ObjectId,
+    "texto": String,
+    "fecha_hora": Date,
+    "video": ObjectId, // Referencia a la colección Videos
+    "usuario": ObjectId // Referencia a la colección Usuarios
+}
+
+// Colección LikesDislikesComentarios
+{
+    "_id": ObjectId,
+    "usuario": ObjectId, // Referencia a la colección Usuarios
+    "comentario": ObjectId, // Referencia a la colección Comentarios
+    "tipo": String, // "like" o "dislike"
+    "fecha_hora": Date
+}

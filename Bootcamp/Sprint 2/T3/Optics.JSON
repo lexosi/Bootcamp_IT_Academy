@@ -1,0 +1,60 @@
+// Colección Proveedores
+{
+    "_id": ObjectId,
+    "nombre": String,
+    "direccion": {
+        "calle": String,
+        "numero": String,
+        "piso": String,
+        "puerta": String,
+        "ciudad": String,
+        "codigo_postal": String,
+        "pais": String
+    },
+    "telefono": String,
+    "fax": String,
+    "NIF": String
+}
+
+// Colección Gafas
+{
+    "_id": ObjectId,
+    "marca": String,
+    "graduacion": {
+        "izquierdo": Number,
+        "derecho": Number
+    },
+    "tipo_montura": String, // "flotante", "pasta" o "metalica"
+    "color_montura": String,
+    "color_cristal": {
+        "izquierdo": String,
+        "derecho": String
+    },
+    "precio": Number,
+    "proveedor": ObjectId // Referencia a la colección Proveedores
+}
+
+// Colección Clientes
+{
+    "_id": ObjectId,
+    "nombre": String,
+    "direccion_postal": String,
+    "telefono": String,
+    "correo_electronico": String,
+    "fecha_registro": Date,
+    "recomendado_por": ObjectId // Referencia a la colección Clientes
+}
+
+// Colección Ventas
+{
+    "_id": ObjectId,
+    "gafa": ObjectId, // Referencia a la colección Gafas
+    "cliente": ObjectId, // Referencia a la colección Clientes
+    "empleado": ObjectId // Referencia a la colección Empleados
+}
+
+// Colección Empleados
+{
+    "_id": ObjectId,
+    "nombre": String
+}

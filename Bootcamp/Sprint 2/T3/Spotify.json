@@ -1,0 +1,81 @@
+// Colección Usuarios
+{
+    "_id": ObjectId,
+    "email": String,
+    "password": String,
+    "nombre_usuario": String,
+    "fecha_nacimiento": Date,
+    "sexo": String,
+    "pais": String,
+    "codigo_postal": String,
+    "tipo": String, // "free" o "premium"
+    "suscripcion": {
+        "fecha_inicio": Date,
+        "fecha_renovacion": Date,
+        "forma_pago": {
+            "tipo": String, // "tarjeta" o "paypal"
+            "tarjeta": {
+                "numero_tarjeta": String,
+                "mes_caducidad": Number,
+                "anio_caducidad": Number,
+                "codigo_seguridad": Number
+            },
+            "paypal": {
+                "nombre_usuario": String
+            }
+        },
+        "pagos": [
+            {
+                "fecha": Date,
+                "numero_orden": String,
+                "total": Number
+            }
+        ]
+    },
+    "playlists": [
+        {
+            "titulo": String,
+            "num_canciones": Number,
+            "id": ObjectId,
+            "fecha_creacion": Date,
+            "fecha_eliminacion": Date,
+            "estado": String, // "activa" o "borrada"
+            "canciones": [
+                {
+                    "cancion": ObjectId, // Referencia a la colección Canciones
+                    "usuario": ObjectId, // Referencia a la colección Usuarios
+                    "fecha": Date
+                }
+            ]
+        }
+    ],
+    "artistas_seguidos": [ObjectId], // Referencias a la colección Artistas
+    "albumes_favoritos": [ObjectId], // Referencias a la colección Albumes
+    "canciones_favoritas": [ObjectId] // Referencias a la colección Canciones
+}
+
+// Colección Canciones
+{
+    "_id": ObjectId,
+    "titulo": String,
+    "duracion": Number,
+    "num_reproducciones": Number,
+    "album": ObjectId // Referencia a la colección Albumes
+}
+
+// Colección Albumes
+{
+    "_id": ObjectId,
+    "titulo": String,
+    "anio_publicacion": Number,
+    "imagen_portada": String,
+    "artista": ObjectId // Referencia a la colección Artistas
+}
+
+// Colección Artistas
+{
+    "_id": ObjectId,
+    "nombre": String,
+    "imagen": String,
+    "artistas_relacionados": [ObjectId] // Referencias a la colección Artistas
+}

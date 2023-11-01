@@ -1,0 +1,78 @@
+// Colección Clientes
+{
+    "_id": ObjectId,
+    "nombre": String,
+    "apellidos": String,
+    "direccion": String,
+    "codigo_postal": String,
+    "localidad": ObjectId, // Referencia a la colección Localidades
+    "provincia": ObjectId, // Referencia a la colección Provincias
+    "telefono": String
+}
+
+// Colección Localidades
+{
+    "_id": ObjectId,
+    "nombre": String,
+    "provincia": ObjectId // Referencia a la colección Provincias
+}
+
+// Colección Provincias
+{
+    "_id": ObjectId,
+    "nombre": String
+}
+
+// Colección Pedidos
+{
+    "_id": ObjectId,
+    "fecha_hora": Date,
+    "tipo_entrega": String, // "domicilio" o "tienda"
+    "productos": [
+        {
+            "producto": ObjectId, // Referencia a la colección Productos
+            "cantidad": Number
+        }
+    ],
+    "precio_total": Number,
+    "cliente": ObjectId, // Referencia a la colección Clientes
+    "tienda": ObjectId, // Referencia a la colección Tiendas
+    "repartidor": ObjectId, // Referencia a la colección Empleados
+    "fecha_hora_entrega": Date
+}
+
+// Colección Productos
+{
+    "_id": ObjectId,
+    "nombre": String,
+    "descripcion": String,
+    "imagen": String,
+    "precio": Number,
+    "categoria": ObjectId // Referencia a la colección Categorias (solo para pizzas)
+}
+
+// Colección Categorias
+{
+    "_id": ObjectId,
+    "nombre": String
+}
+
+// Colección Tiendas
+{
+    "_id": ObjectId,
+    "direccion": String,
+    "codigo_postal": String,
+    "localidad": ObjectId, // Referencia a la colección Localidades
+    "provincia": ObjectId // Referencia a la colección Provincias
+}
+
+// Colección Empleados
+{
+    "_id": ObjectId,
+    "nombre": String,
+    "apellidos": String,
+    "NIF": String,
+    "telefono": String,
+    "puesto": String, // "cocinero" o "repartidor"
+    "tienda": ObjectId // Referencia a la colección Tiendas
+}
