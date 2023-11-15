@@ -46,7 +46,7 @@
 					"param": "calle, numero, piso, puerta, ciudad, cp, pais",
 					"pk": false,
 					"nn": true,
-					"list": true,
+					"list": false,
 					"comment": "",
 					"data": "",
 					"enum": "",
@@ -181,7 +181,7 @@
 					"param": "izquierda, derecha",
 					"pk": false,
 					"nn": true,
-					"list": true,
+					"list": false,
 					"comment": "",
 					"data": "",
 					"enum": "",
@@ -229,7 +229,7 @@
 					"param": "isquierrda, derecha",
 					"pk": false,
 					"nn": true,
-					"list": true,
+					"list": false,
 					"comment": "",
 					"data": "",
 					"enum": "",
@@ -926,7 +926,7 @@
 		"def_validationAction": "na",
 		"def_collation": "",
 		"def_others": "",
-		"lastSaved": 1698925121880
+		"lastSaved": 1698925845739
 	},
 	"otherObjects": {},
 	"diagrams": {
@@ -944,7 +944,7 @@
 			"diagramItems": {
 				"81c61cfd-2f62-4a78-9a61-cf105bf8f711": {
 					"referencedItemId": "81c61cfd-2f62-4a78-9a61-cf105bf8f711",
-					"x": 45,
+					"x": 46,
 					"y": 30,
 					"gHeight": 262,
 					"gWidth": 414,
@@ -960,7 +960,7 @@
 					"x": 49,
 					"y": 294,
 					"gHeight": 243,
-					"gWidth": 233,
+					"gWidth": 229,
 					"color": "#ffffff",
 					"background": "#03a9f4",
 					"resized": false,
