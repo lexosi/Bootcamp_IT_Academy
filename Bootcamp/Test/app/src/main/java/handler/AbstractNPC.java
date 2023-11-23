@@ -7,7 +7,7 @@ public abstract class AbstractNPC {
     String nombre;
     String ciudad;
     protected List<Item> items = new ArrayList<>();
-    protected static int maxItems = 0;
+     final int maxItems;
     
     public String getNombre() {
         return nombre;
@@ -42,7 +42,7 @@ public abstract class AbstractNPC {
         this.nombre = nombre;
         this.ciudad = ciudad;
         this.items = items;
-        AbstractNPC.maxItems = maxItems;
+        this.maxItems = maxItems;
     }
 
 

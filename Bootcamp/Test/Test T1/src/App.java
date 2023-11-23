@@ -61,12 +61,12 @@ public static List<Item> getItemsOfTypeSortedByPrice(String type) {
 
 public static void simulatePurchase(AbstractNPC npc, Item item) throws ItemNotFoundException {
  // TODO: add support for selling items
-    // add additional logic to handle the purchase, e.g. update the player's gold and inventory
+   
 }
 
 public static void simulateSale(AbstractNPC npc, Item item) throws InventoryFullException {
     npc.addItem(item);
-    // add additional logic to handle the sale, e.g. update the player's gold and inventory
+ 
 }
 
 public static void serializeNPCs() throws IOException {
