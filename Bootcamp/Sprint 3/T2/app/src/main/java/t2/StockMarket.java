@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-import java.util.List;
+import java.util.List; 
 
 public class StockMarket {
      private List<Observer> observers = new ArrayList<>();
