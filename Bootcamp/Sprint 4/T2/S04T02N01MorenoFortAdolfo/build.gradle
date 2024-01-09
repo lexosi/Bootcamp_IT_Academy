@@ -8,7 +8,8 @@ group = 'cat.itacademy.barcelonactiva.MorenoFort.Adolfo.s04.t02.n01'
 version = '0.0.1-SNAPSHOT'
 
 java {
-	sourceCompatibility = '17'
+	sourceCompatibility = 1.17
+	targetCompatibility = 1.17
 }
 
 repositories {
