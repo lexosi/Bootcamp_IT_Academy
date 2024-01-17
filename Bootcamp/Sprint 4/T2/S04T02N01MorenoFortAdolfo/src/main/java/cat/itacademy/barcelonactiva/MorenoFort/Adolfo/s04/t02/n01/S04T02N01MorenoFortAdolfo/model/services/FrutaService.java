@@ -27,8 +27,8 @@ public class FrutaService {
         }
 
         @Deprecated
-        public void getOne (int id) {
-            frutaRepository.getOne(id);
+        public Fruta getOne (int id) {
+           return frutaRepository.getOne(id);
         }
 
         public List<Fruta> getAll () {
