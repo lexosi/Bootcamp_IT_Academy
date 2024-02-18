@@ -1,0 +1,38 @@
+{
+  "players": {
+    "bsonType": "object",
+    "required": ["_id", "name", "registrationDate"],
+    "properties": {
+      "_id": {
+        "bsonType": "int"
+      },
+      "name": {
+        "bsonType": "string"
+      },
+      "registrationDate": {
+        "bsonType": "date"
+      }
+    }
+  },
+  "games": {
+    "bsonType": "object",
+    "required": ["_id", "playerId", "dice1", "dice2", "win"],
+    "properties": {
+      "_id": {
+        "bsonType": "int"
+      },
+      "playerId": {
+        "bsonType": "int"
+      },
+      "dice1": {
+        "bsonType": "int"
+      },
+      "dice2": {
+        "bsonType": "int"
+      },
+      "win": {
+        "bsonType": "bool"
+      }
+    }
+  }
+}
